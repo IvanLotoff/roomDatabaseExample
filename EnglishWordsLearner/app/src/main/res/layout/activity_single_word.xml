@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/word_title"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SingleWordActivity">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:text="Английский:"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/word_en_changed"
+        android:textSize="22sp"
+        android:text="EN_Word"
+        android:background="@android:color/transparent"
+        />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="3px"
+        android:src="@drawable/divider_line"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:text="Русский:"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/word_ru_changed"
+        android:textSize="22sp"
+        android:text="RU_Word"
+        android:background="@android:color/transparent"
+        />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="3px"
+        android:src="@drawable/divider_line"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/update_button"
+        android:text="Обновить"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:text="Примеры использования"
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/recViewSentences"/>
+</LinearLayout>
